@@ -1,0 +1,159 @@
+\input{../preamble}
+\input{../title}
+\input{../foot}
+\input{../mathequ}
+\input{../mycommand}
+\begin{document}
+
+\begin{frame}
+\maketitle
+\end{frame}
+
+\begin{frame}
+\tableofcontents[hidesubsections,sections={<1-8>}]
+\end{frame}
+
+\section{The Hamiltonian}
+\begin{frame}
+The Hamiltonian for an oscillator with a frequency w(t) under the action of a force eE(t) has the form:
+\[H=-\frac{\hbar^2}{2m}\Dxx+\frac{1}{2}mw^2(t)x^2+eE(t)x\]
+we can take the natural  units or make a transportation to simplify the Hamiltonian. In any cases , we can assume that  the Hamiltonian has the form placed below:
+\[H=-\frac{1}{2}\frac{d^2}{dx^2}+\frac{1}{2}w^2(t)x^2+f(t)x\]
+\end{frame}
+
+\section{Some Comments}
+\begin{frame}
+In this case ,the Hamiltonian is time-dependent, so the equation:
+\[H(t)\diracr{\Psi(t)}=E(t)\diracr{\Psi(t)}\]
+has no physical meanings on account that we can not separate the time factor from the wave function. However if we regard ‘t’ as a parameter ,The Hamiltonian ,which is also a Hermite operator ,has it’s own eigenvalues and eigenstates which also can be used , but just can be used as mathematical tools. In short, in this case we should discuss the original Schrodinger equation instead of the eigenstates and the eigenvalues equation :
+\[i\partial_t \Psi(x,t)=\lh-\frac{1}{2}\frac{d^2}{dx^2}+\frac{1}{2}w^2(t)x^2+f(t)x\rh\Psi(x,t)\]
+\end{frame}
+
+\section{f(t)=0}
+\begin{frame}
+let us consider a simple case with f(t)=0,in this case the Schrodinger equation takes the form below:
+\begin{align*}
+i\partial_t \Psi(x,t)=\lh-\frac{1}{2}\frac{d^2}{dx^2}+\frac{1}{2}w^2(t)x^2\rh\Psi(x,t)
+\end{align*}
+and we assume:
+\begin{align*}
+w(t)=\begin{cases}
+w_0\indent\ t\rightarrow t_0\\
+w(t)\indent t>t_0             
+\end{cases}
+\end{align*}
+At first ,let us consider  the classical solution to this system ,in classic physics , we assume the solution to the equation:
+\[\frac{d^2}{dt^2}\xi+(w^2(t))\xi=0\]
+with an initial condition:
+\end{frame}
+\begin{frame}
+\[\xi(t)=exp(iw_0t)\]
+takes the form:
+\[\xi(t)=r(t)exp(i\gamma(t))\indent r(t)=|\xi(t)|\]
+then we take advantage this function to suppose a solution to the Schrodinger equation takes the form:
+\begin{align*}
+\Psi(x,t)=\frac{1}{\sqrt{r(t)}}exp(-i\phi(x,t))\chi_- (y,\tau),y=\frac{x}{r(t)},\tau=\frac{\gamma(t)}{w_0}
+\end{align*}
+there are two unknown functions which need us to find out but they are not all independent because the function above satisfies the SE. we can also assume one of the two unknown functions takes a particular form and then the other one is also confirmed. if our assumption about one of the unknown functions is quiet unique ,we may find out the other one is also very easy to confirm ,in that case ,this problem is easier. In order to do this ,let us firstly take the assumed solution to the SE , and we can derive:
+\end{frame}
+\begin{frame}
+\begin{align*}
+&i\lh-\frac{1}{2}r(t)^{-\frac{3}{2}}\partial_t r(t)exp(-i\phi(x,t))\chi_-+r(t)^{-\frac{1}{2}}exp(-i\phi(x,t))(-i\partial_t \phi)\chi_-\rh\\
+&+i\lh r(t)^{-\frac{1}{2}}exp(-i\phi(x,t))\{\frac{\partial\chi_-}{\partial y}\frac{\partial y}{\partial t}+\frac{\partial\chi_-}{\partial \tau}\frac{\partial\tau}{\partial t}\}\rh\\
+&=-\frac{1}{2}r(t)^{-\frac{1}{2}}exp(-i\phi(x,t))\lh(-i\frac{\partial\phi}{\partial x})^2\chi_-+(-i\frac{\partial^2\phi}{\partial x^2})\chi_-+2(-i\frac{\partial\phi}{\partial x})\frac{\partial\chi_-}{\partial y}\frac{\partial y}{\partial x}\rh\\
+&-\frac{1}{2}r(t)^{-\frac{1}{2}}exp(-i\phi(x,t))\lh\frac{\partial^2\chi_-}{\partial y^2}(\frac{\partial y}{\partial x})^2\rh+\frac{1}{2}w^2(t)x^2\frac{1}{\sqrt{r(t)}}exp(-i\phi(x,t))\chi_-
+\end{align*}
+to simplify it ,we derive:
+\begin{align*}
+&i\lh-\frac{1}{2}r(t)^{-1}\partial_t r(t)\chi_-+(-i\partial_t \phi)\chi_-+\{\frac{\partial\chi_-}{\partial y}\frac{\partial y}{\partial t}+\frac{\partial\chi_-}{\partial \tau}\frac{\partial\tau}{\partial t}\}\rh\notag\\
+&=-\frac{1}{2}\lh(-i\frac{\partial\phi}{\partial x})^2\chi_-+(-i\frac{\partial^2\phi}{\partial x^2})\chi_-+2(-i\frac{\partial\phi}{\partial x})\frac{\partial\chi_-}{\partial y}\frac{\partial y}{\partial x}+\frac{\partial^2\chi_-}{\partial y^2}(\frac{\partial y}{\partial x})^2\rh\notag\\
+&+\frac{1}{2}w^2(t)x^2\chi_-\label{eq:phichi}
+\end{align*}
+\end{frame}
+\begin{frame}
+at this time we can choose a particular form for one of the unknown function with the purpose that the other one is easy to solve. 
+with that purpose in mind ,we can choose a form . so that the sentence above do not contain .in other word ,we derive
+\[i\frac{\partial y}{\partial t}=-\frac{1}{2}2(-i\frac{\partial\phi}{\partial x})\frac{\partial y}{\partial x}\]
+\[ x\frac{-\dot{r}(t)}{r(t)^2}=\frac{\partial\phi}{\partial x}\frac{1}{r(t)}\]
+\[\phi(x,t)=-\frac{x^2\dot{r}(t)}{2r(t)}\]
+naturally , we should take this function to the equation and then find out the form of  the other :
+\end{frame}
+\begin{frame}
+\begin{align}
+& i\lh -\frac{\dot{r}}{2r}\chi_- -i\{-\frac{x^2}{2}(\frac{\ddot{r}r-\dot{r}^2}{r^2})\chi_-\}+\frac{\partial\chi_-}{\partial\tau}\frac{\dot{\gamma}}{w_0}\rh\notag\\
+&=-\frac{1}{2}\lh-\frac{\dot{r}^2x^2}{r^2}\chi_-+i\frac{\dot{r}}{r}\chi_-+\frac{\partial^2\chi_-}{\partial y^2}\frac{1}{r^2}\rh+\frac{1}{2}w^2(t)x^2\chi_-\notag\\
+\Rightarrow & i\lh-i\{-\frac{x^2}{2}(\frac{\ddot{r}r}{r^2})\chi_-\}+\frac{\partial\chi_-}{\partial\tau}\frac{\dot{\gamma}}{w_0}\rh\notag\\
+&=-\frac{1}{2}\lh+\frac{\partial^2\chi_-}{\partial y^2}\frac{1}{r^2}\rh+\frac{1}{2}w^2(t)x^2\chi_-\notag\\
+\Rightarrow &i\frac{\dot{\gamma}}{w_0}\frac{\partial\chi_-}{\partial\tau}=-\frac{1}{2r^2}\frac{\partial^2\chi_-}{\partial y^2}+\frac{1}{2}\{w^2(t)+\frac{\ddot{r}}{r}\}x^2\notag\chi_-\label{eq:jianhua}
+\end{align}
+on account of the relationship between  which we can get from our assumption about them at the beginning part in this section, we can then simplify the equation above:
+\end{frame}
+\begin{frame}
+\begin{align*}
+&\ddot{r}e^{i\gamma}+2\dot{r}e^{i\gamma}i\dot{\gamma}-re^{i\gamma}\dot{\gamma}^2+re^{i\gamma}i\ddot{\gamma}+w^2 re^{i\gamma}=0\\
+\Rightarrow &\ddot{r}+2\dot{r}i\dot{\gamma}-r\dot{\gamma}^2+r i\ddot{\gamma}+w^2 r=0
+\end{align*}
+the real part and the imaginary part in the equation above must be equal to zero as a result of our assumption about	so we derive:
+\begin{align*}
+\ddot{r}-r\dot{\gamma}^2+w^2r=0&\Rightarrow w^2+\frac{\ddot{r}}{r}=\dot{\gamma}^2\\
+2\dot{r}\dot{\gamma}+r\ddot{\gamma}=0&\Rightarrow \frac{d}{dt}(r^2\dot{\gamma})=0\Rightarrow \dot{\gamma}=\frac{w_0}{r^2}
+\end{align*}
+we use all the relations we get to simplify the equation about 	 and we can easily derive:	
+\begin{align*}
+&i\frac{1}{r^2}\frac{\partial\chi_-}{\partial\tau}=-\frac{1}{2r^2}\frac{\partial^2\chi_-}{\partial y^2}+\frac{1}{2}\frac{w_0^2}{r^4} x^2\chi_-\\
+&i\frac{\partial\chi_-}{\partial\tau}=-\frac{1}{2}\frac{\partial^2\chi_-}{\partial y^2}+\frac{1}{2}w_0^2 y^2\chi_-
+\end{align*}
+\end{frame}
+\begin{frame}
+we can clearly see that the equation about is time-independent and we all know the solution to such a common equation. So we can see that when f(t)=0, the equation can be solved exactly. its solution takes the form below:
+\[\Psi(x,t)=\frac{1}{\sqrt{r(t)}}exp(i\frac{x^2\dot{r}(t)}{2r(t)})\chi_- (y,\tau),y=\frac{x}{r(t)},\tau=\frac{\gamma(t)}{w_0}\]
+\end{frame}
+
+
+\section{f(t)!=0}
+\begin{frame}
+In this case ,we try to convert it to the case with f(t)=0 which we have just discussed ,in order to clearly see the physical meanings about some unknown functions which we will later assume , we change the sign in front of f(t) to minus ,it’s no matter since f(t) can take any form, so the Schrodinger  equation becomes:
+\begin{align*}
+i\partial_t \Psi(x,t)=\lh-\frac{1}{2}\frac{d^2}{dx^2}+\frac{1}{2}w^2(t)x^2-f(t)x\rh\Psi(x,t)
+\end{align*}
+on account of:
+\[\frac{1}{2}w^2(t)x^2-f(t)x=\frac{1}{2}w^2(t)(x-\frac{f(t)}{w^2})^2-\frac{1}{2}\frac{f^2(t)}{w^2}\]
+Firstly , we make a shift to x:
+\[x_1=x-\eta(t)\]
+\end{frame}
+\begin{frame}
+Then ,just like the method we used before ,we can assume the solution to this case takes the form:
+\[\Psi(x,t)=exp(i(\dot{\eta}x_1+\sigma(t)))\phi(x_1,t)\]
+There are three unknown functions which need us to confirm:
+\[\eta(t),\sigma(t),\phi(x_1,t)\]
+among them we hope  when we choose particular forms for and  we can convert this case to the case with f(t)=0 and is the solution to the converted case. with this in mind we take them to the Schrodinger equation and simplify it :
+\begin{align*}
+i\frac{\partial \phi}{\partial t}=-\frac{1}{2}\frac{\partial ^2\phi}{\partial x_1^2}+\frac{1}{2}w^2(t)x_1^2\phi+(\ddot{\eta}+w^2(t)\eta-f(t))x_1\phi+(\dot{\sigma}-\frac{1}{2}\dot{\eta}^2+\frac{1}{2}w^2(t)\eta^2-f(t)\eta(t))\phi
+\end{align*}
+so if the equation about  above just  the case with f(t)=0,the other two unknown functions should satisfy :
+\end{frame}
+\begin{frame}
+\begin{align*}
+\ddot{\eta}+w^2(t)\eta-f(t)&=0\\
+\dot{\sigma}-\frac{1}{2}\dot{\eta}^2+\frac{1}{2}w^2(t)\eta^2-f(t)\eta(t)&=0
+\end{align*}
+to see it clearly we can change its form:
+\begin{align*}
+\ddot{\eta}+w^2(t)\eta&=f(t)\\
+\dot{\sigma}&=\frac{1}{2}\dot{\eta}^2-\frac{1}{2}w^2(t)\eta^2+f(t)\eta(t)=L(t)
+\end{align*}
+so the solution to the original equation is:
+\begin{align*}
+\psi(x,t)=exp(i\dot{\eta}(x-\eta(t))+i\int_{t_0}^t L(t')\diff{t'})\phi(x-\eta(t),t)
+\end{align*}
+\end{frame}
+\begin{frame}
+According to the discussion before we derive:
+\[\phi(x,t)=\frac{1}{\sqrt{r(t)}}exp(i\frac{x^2\dot{r}(t)}{2r(t)})\chi_- (\frac{x}{r(t)},\frac{\gamma(t)}{w_0})\]
+Finally the solution to the original equation is:
+\begin{align*}
+\Psi(x,t)=\frac{1}{\sqrt{r(t)}}exp(i\lh\frac{(x-\eta)^2\dot{r}(t)}{2r(t)}+\dot{\eta}(x-\eta)+\int_{t_0}^t L(t')\diff{t'}\rh)\chi_- (\frac{x-\eta(t)}{r(t)},\frac{\gamma(t)}{w_0})
+\end{align*}
+\end{frame}
+
+\end{document}

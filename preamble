@@ -1,0 +1,37 @@
+\documentclass[hyperref,a4paper,UTF-8]{ctexart}
+
+\usepackage{geometry}%设置纸张边界距离
+\geometry{left=2cm,right=2cm,top=3cm,bottom=2cm}
+
+\usepackage{fixltx2e}%修正latex2中的某些bug的宏包
+
+\usepackage{fancyhdr}%设置章节格式
+\cfoot{\thesection}
+\lhead{\thesection}
+\CTEXsetup[indent=0cm,name={\S,},number={\Roman{section}},aftername={\ },format={\raggedright\bfseries}]{section}
+\CTEXsetup[indent=0cm,name={$\Re$,},number={\arabic{subsection}},aftername={\ },format={\raggedright\bfseries}]{subsection}
+\CTEXsetup[indent=0cm,name={$\oint$,},number={\arabic{subsubsection}},aftername={\ },format={\raggedright\bfseries}]{subsubsection}
+\renewcommand{\labelitemi}{}
+
+\hypersetup%设置超链接，标签样式等
+{
+colorlinks=false,
+bookmarks=true,
+bookmarksopen=false,
+%pdfpagemode=FullScreen,
+pdfstartview=Fit,
+pdfborder=0 0 0
+}
+%hyperref宏包还具有html中的链接和标签功能；
+%usepackage{amsmath}%已在mathequ中引用，故不需再次引用
+\usepackage{hyperref}
+
+
+\bibliographystyle{plain}%设置参考文献风格,可以修改为任意的.bst文件（说明格式的文件）；
+\usepackage{natbib}%管理引用输出的宏包
+%\renewcommand\bibname{References}
+\renewcommand\bibpreamble{All the references are listed below:}
+\renewcommand\bibfont{\small}
+\renewcommand\citenumfont{\itshape}
+%还有bibnumfmt,bibhang,bibsep变量可以控制相应的格式
+\setcitestyle{numbers,square,semicolon,aysep={;},yysep={,},notesep={\ }}

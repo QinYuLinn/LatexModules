@@ -1,0 +1,53 @@
+\usepackage{mathtools}%可用于下面格式的排版，在符号左边添加角标
+%$prescript{n}{m}{H}_i^j<L$
+
+\usepackage{tensor}%主要用于张量的排版，\indices,\tensor两个命令
+
+\usepackage{mhchem}%主要用于化学式的排版，\ce命令eg:\ce{H2O}
+
+\usepackage{amsmath,amssymb}
+\allowdisplaybreaks
+\newcommand\degree{^\circ}%定义角度
+\setcounter{MaxMatrixCols}{10}%设置矩阵能显示的最多列数
+\DeclareMathOperator\dif{d\!}%定义微分算子
+\newcommand\diff{\,\mathrm{d}}%定义微分算子，使其符合数学习惯
+%\newtheorem{theorem}{\bf Theorem}[section]%定义定理环境,按章节编号
+
+
+
+\setlength\multlinegap{3em}%设置multline分行列方程的各项间距
+\setlength\multlinetaggap{3em}
+
+%\newtagform{bracket}[\textit]{[}{]}%定义新的编号格式
+%\usetagform{bracket}使用新定义的编号格式
+%\renewcommand\theequation{\thesection.\roman{equation}}%重定义编号内容格式
+%\DeclareMathSizes{10.54}{10.54}{6.32}{4.22}%调整公式的字号
+%\renewcommand\defaultscriptratio{0.6}%调整标号尺寸
+%\renewcommand\defaultscriptscriptratio{0.4}%调整小标号尺寸
+\newcommand\lowint%定义上下积分
+{
+\mspace{2mu}\underline{\vphantom{\int}\mspace{10mu}}\mspace{-9mu}\int
+}
+\newcommand\overint
+{
+\mspace{2mu}\overline{\vphantom{\int}\mspace{10mu}}\mspace{-22mu}\int
+}
+
+%\setlength\abovedisplayskip{12pt plus 3pt minus 9pt}%设置方程与上面文本之间的距离，有重叠时
+%\setlength\abovedisplayshortskip{0pt plus 3pt}%设置方程与上面文本之间的距离，无重叠时
+%\setlength\belowdisplayskip{12pt plus 3pt minus 9pt}%设置方程与下面文本之间的距离，有重叠时
+%\setlength\belowdisplayshortskip{0pt plus 3pt}%设置方程与下面文本之间的距离，无重叠时
+%setlength\jot{5pt}%设置多行公式公式行间的距离
+%类似还有\thinmuskip,\medmuskip,\thickmuskip,\mathsurround等变量可以相应的设置
+
+
+\newcommand\lh{\left\{}
+\newcommand\rh{\right\}}
+\newcommand\ly{\left\(}
+\newcommand\ry{\right\)}
+\newcommand\ex[1]{\bf{$\Re$ \it{#1}}}
+\newcommand\diracr[1]{|{#1}\rangle}
+\newcommand\diracl[1]{\langle{#1}|}
+\newcommand\Dx{\frac{d}{dx}}
+\newcommand\Dxx{\frac{d^2}{dx^2}}
+\newcommand\oiint{\mathop{{\int\!\!\!\!\!\int}\mkern-21mu \bigcirc} {}}

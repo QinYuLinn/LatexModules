@@ -1,0 +1,4 @@
+\subsection{插图测试}
+\begin{center}
+\includegraphics[width=\textwidth,height=6cm]{../pictures/picture1.png}
+\end{center}

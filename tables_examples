@@ -1,0 +1,56 @@
+\subsection{自定义按小数点对齐方式测试}
+\begin{center}
+\begin{tabular}[b]{|c|.|.|}
+\hline
+Name &Jane &Mary\\\hline
+Import &34.5 &50\\\hline
+Export &786.36 &572.2\\\hline
+Saved  &117.93 &365.90\\\hline
+\end{tabular}与表格底部对齐
+\end{center}
+
+\subsection{表格的合并测试}
+\begin{center}
+\begin{tabular}[c]{|c|.|.|}
+\hline
+\vline &\multicolumn{2}{|c|}{Jane}\\\cline{2-3}
+Name &34.5 &50\\\hline
+Export &786.36 &572.2\\\hline
+Saved  &117.93 &365.90\\\hline
+\end{tabular}与表格中部对齐
+\end{center}
+
+\subsection{multirow宏包使用测试}
+\begin{center}
+\begin{tabular}[t]{|c|.|.|}
+\firsthline
+\multirow{2}*{Name} &\multicolumn{2}{|c|}{Jane}\\\cline{2-3}
+	   &34.5 &50\\\hline
+Export &786.36 &572.2\\\hline
+Saved  &117.93 &365.90\\\hline
+\end{tabular}与表格顶部对齐
+\end{center}
+
+\subsection{三线表格式测试}
+\begin{center}
+\begin{tabular}[b]{c..}
+\toprule
+Name &Jane &Mary\\\midrule
+Import &34.5 &50\\
+Export &786.36 &572.2\\
+Saved  &117.93 &365.90\\
+\bottomrule
+\end{tabular}与表格底部对齐
+\end{center}
+
+\subsection{虚线与双线排版测试}
+\begin{center}
+\begin{tabular}[b]{c.:.}
+\toprule
+Name &Jane &Mary\\\hhline{|===|}
+Import &34.5 &50\\
+Export &786.36 &572.2\\\hdashline
+Saved  &117.93 &365.90\\
+\bottomrule
+\end{tabular}与表格底部对齐
+\end{center}

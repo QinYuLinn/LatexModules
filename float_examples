@@ -1,0 +1,17 @@
+\subsection{浮动体和标题排版测试}
+\begin{table}[H]
+\centering
+\begin{tabular}[b]{|c|.|.|}
+\hline
+Name &Jane &Mary\\\hline
+Import &34.5 &50\\\hline
+Export &786.36 &572.2\\\hline
+Saved  &117.93 &365.90\\\hline
+\end{tabular}
+\caption{收入支出统计表}
+\end{table}
+
+\subsection{绕排功能排版测试}
+\begin{figwindow}[2,c,\includegraphics[height=4cm]{/Users/qinyulin/Tex_Document/Modules/pictures/picture1.png},闪光法数据图]
+At the former part of the novel, Hardy describes Angel as a handsome, polite and unconventional young man  who owns his own life. We can clearly conclude that he is a gentleman. On the contrary ,Hardy describes Alec as a wealthy but womanizer and evil man who even seduces the pure Tess. He not only hurts Tess but also takes nearly no responsibility which greatly changes Tess's life. However, Hardy designs the plot that Angel has a quarrel with Tess in their wedding night on knowing Tess's past and he no longer loves her and even abandons her which makes her get into a miserable situation. It's Angel that makes her and her family suffers a lot because of his indifference. When they come down to homeless after their father's death, It is Alec who helps them and saves their lives.we can see that Alec is also a good man and Angel is also an evil man. In this way, Hardy complicate the categories of  good and evil.
+\end{figwindow}

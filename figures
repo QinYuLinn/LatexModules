@@ -1,0 +1,4 @@
+\usepackage{graphicx}
+\usepackage{graphics}
+\graphicspath{{/Users/qinyulin/Tex_Document/Modules/module_files/pictures/}}
+\usepackage{lscape}%提供的landscape环境可以对页面进行旋转

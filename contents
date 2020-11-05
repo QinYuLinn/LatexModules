@@ -1,0 +1,26 @@
+\usepackage{tocloft}
+\renewcommand\contentsname{contents}
+\renewcommand\cfttoctitlefont{\hfil\Large\sffamily\bfseries}
+\renewcommand\cftaftertoctitle{\hfill}
+\setlength\cftbeforetoctitleskip{2ex}
+\setlength\cftaftertoctitleskip{2ex}
+
+\renewcommand\listfigurename{figures}
+\renewcommand\cftloftitlefont{\hfil\Large\sffamily\bfseries}
+\renewcommand\cftafterloftitle{\hfill}
+\setlength\cftbeforeloftitleskip{2ex}
+\setlength\cftafterloftitleskip{2ex}
+
+\renewcommand\listtablename{tables}
+\renewcommand\cftlottitlefont{\hfil\Large\sffamily\bfseries}
+\renewcommand\cftafterlottitle{\hfill}
+\setlength\cftbeforelottitleskip{2ex}
+\setlength\cftafterlottitleskip{2ex}
+
+%控制章节图表目录标题格式
+\renewcommand\cftsecfont{\large\sffamily\itshape\mdseries}
+\renewcommand\cftsecpresnum{\ }
+\renewcommand\cftsecaftersnum{\hfill}
+\renewcommand\cftsecaftersnumb{}
+\renewcommand\cftdotsep{0}
+\renewcommand\cftdot{}

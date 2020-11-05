@@ -1,0 +1,22 @@
+\title{Insert Title Here}
+\subtitle{Insert Subtitle Here}
+\subject{理论物理学}
+\keywords{Latex PowerPoint}
+%\author{覃宇林}
+%\institute{Peking}
+\date{2020年3月3日}
+
+\author[author1,author2]
+{
+author1\inst{1} \and author2\inst{2}
+}
+\institute[Beijing Institute of Technology]
+{
+  \inst{1}
+  School of Computer Science\\
+  Beijing Institute of Technology
+  \and
+  \inst{2}
+  Department of Theoretical Philosophy\\
+  University of Elsewhere
+}

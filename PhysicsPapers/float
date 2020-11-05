@@ -1,0 +1,6 @@
+\captionsetup{labelfont={bf,it},textfont={small,rm}}%设置标题字体的三种方式
+\captionsetup{format=plain}
+\captionsetup{labelformat=default}
+\captionsetup{labelsep=colon}
+\captionsetup{justification=justified}
+\captionsetup{skip=10pt}%设置标题与浮动体之间的垂直间距}

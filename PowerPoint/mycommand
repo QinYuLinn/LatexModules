@@ -1,0 +1,23 @@
+%命令footlineextra定义
+\makeatletter
+\newcommand{\footlineextra}[1]{\gdef\insertfootlineextra{#1}}
+\newbox\footlineextrabox
+\defbeamertemplate*{footline extra}{default}{
+  \begin{beamercolorbox}[ht=2.25ex,dp=1ex,leftskip=\Gm@lmargin]{footline extra}
+    \insertfootlineextra
+    % \par\vspace{2.5pt}
+  \end{beamercolorbox}
+}
+ \addtobeamertemplate{footline}{%
+  % set the box with the extra footline material but make it add no vertical space
+  \setbox\footlineextrabox=\vbox{\usebeamertemplate*{footline extra}}
+  \vskip -\ht\footlineextrabox
+  \vskip -\dp\footlineextrabox
+  \box\footlineextrabox%
+}
+{}
+ % patch \begin{frame} to reset the footline extra material
+\let\beamer@original@frame=\frame
+\def\frame{\gdef\insertfootlineextra{}\beamer@original@frame}
+\footlineextra{}
+\makeatother

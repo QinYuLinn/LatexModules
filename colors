@@ -1,0 +1,7 @@
+\usepackage[dvipsnames]{color}%使用颜色所需的宏包
+%\definecolor{Purple}{cmyk}{0.45,0.86,0,0}%自定义颜色名只带具体rgb值颜色的方式举例
+
+\usepackage[dvipsnames]{xcolor}%更常用的宏包
+\colorlet{darkred}{red!50!black}%自定义颜色的命令
+\usepackage{colortbl}%使用彩色表格所需的宏包
+

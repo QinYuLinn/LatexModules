@@ -1,0 +1,28 @@
+\usepackage{titling}
+\setlength{\droptitle}{-2cm}
+
+\pretitle{\begin{center}\LARGE\sffamily}
+\title{Insert The Title Here}
+\posttitle{\par\end{center}\vspace{-0.3cm}}
+
+\preauthor{\large}
+\DeclareRobustCommand{\authorthing}
+{
+\begin{center}
+\begin{tabular}{ccc}
+覃宇林&1700011378&物理学院\\
+%覃宇林 &覃宇军 &覃宇康\\
+%\multicolumn{3}{c}{Peking University}\\
+%\multicolumn{3}{c}{Tshing Unversity}\\
+%\multicolumn{3}{c}{Fudan University}
+\end{tabular}
+\end{center}
+}
+\author{\authorthing}
+\postauthor{}
+
+\predate{\begin{center}\large\scshape}
+\date{2019年6月27日}
+\postdate{\par\end{center}}
+
+%还有maketitlehooka,b,c,d四个可以自定义；

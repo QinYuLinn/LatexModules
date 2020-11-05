@@ -1,0 +1,27 @@
+\newcounter{examples}[section]
+\usecounter{examples}
+\setcounter{examples}{1}
+\newcounter{definition}[section]
+\usecounter{definition}
+\setcounter{definition}{1}
+\newcounter{test}[section]
+\usecounter{test}
+\setcounter{test}{1}
+\newcounter{answer}[section]
+\usecounter{answer}
+\setcounter{answer}{1}
+
+\newenvironment{example}
+{\par\noindent\bfseries example\ \theexamples\indent\mdseries}{\stepcounter{examples}\par}
+
+\newenvironment{solution}
+{\par\noindent\bfseries solution\indent\mdseries}{\par}
+
+\newenvironment{definition}
+{\par\noindent\bfseries Definition\ \thedefinition\indent\mdseries}{\stepcounter{definition}\par}
+
+\newenvironment{test}
+{\par\noindent\bfseries\thetest.\mdseries}{\stepcounter{test}\par\vspace{1cm}}
+
+\newenvironment{answer}
+{\par\noindent\bfseries\theanswer.\mdseries}{\stepcounter{answer}\par\vspace{1cm}}
